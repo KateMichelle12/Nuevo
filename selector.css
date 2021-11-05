@@ -1,0 +1,115 @@
+/* 1.- Selector universal */
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    list-style: none;
+    font-variant: small-caps;
+}
+
+/* 2.- Selector elemento */
+
+h1 {
+    color: yellow;
+    font-size: 30pt;
+    background-color: black;
+}
+
+/* 3.- Selector de clase */
+.claserandom {
+    background-color: brown;
+}
+
+/* 4.- Selector de Identificador */
+#id_1{
+    margin: 10px;
+    background-color: teal;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* 5.-  Selector Hermano */
+span{
+    background-color: lawngreen;
+}
+/* Las propiedades del selector hermano se van a ejecutar hast que se haya ejecutado el anterior en este caso "span" */
+span + h2{
+    background-color: forestgreen;
+    font-style: italic;
+}
+
+/* 6.- Selector Grupo */
+.clasegrupo, h5{
+    color: peru;
+}
+
+/* 7.- Selector combinado */
+.clasecomb#idcomb{
+    font-size: 50pt;
+    background-color: purple;
+}
+
+/* 8.- Selector hijo */
+
+#id_abuelo > .clasepadre > h4{
+    color: maroon;
+}
+
+/* 9.- Selector  Atributo igualacion exacta */
+div[href="youtube.com"]{
+    text-underline-position: above;
+    color: red;
+}
+
+/* 10.- Selector atributo Comienza con  */
+div[href^= "www."]{
+    text-underline-position: initial;
+    color: olive;
+} 
+
+/* 11.- Selector atributo finaliza con */
+div[href$=".org"]{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: orangered;
+}
+
+/* 12.- Selector atributo contiene la cadena */
+div[href*="twit"]{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: royalblue;
+}
+
+/* 13.- Selector atributo contiene inicialmente la palabra... */
+div[data-uwu|="este"]{
+    margin: 5pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: orange;
+    background-color: black;
+    border-radius: 5px;
+}
+
+/* 14.- Slector de atributo igualacion multiple */
+h6[class="forh6"][data-tony*="r"]{
+    background-color: brown;
+    border-radius: 30px;
+    font-size: 25px;
+}
+
+/* 15.- Selector seudoclase */
+a:hover{
+    background-color: grey;
+    color: black;
+}
+a:visited{
+    background-color: black;
+    color: olivedrab;
+}
+
+/* 16.- Selector decendente */
+div #id_decendencia{
+    background-color: black;
+    transform: rotate(-20deg);
+    color: powderblue;
+    width: auto;
+    height: auto;
+}
